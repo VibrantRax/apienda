@@ -1,0 +1,22 @@
+<div class="titulo">
+        <h1>El Gamer Shubidubi</h1>
+    </div>
+    <nav>
+        <hr>
+        <div class="nav-wrapper">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="{{ url_for('categoria') }}"><strong>Categoria</strong></a></li>
+                    <li><a href="{{ url_for('genero') }}"><strong>Genero</strong></a></li>
+                    <li><a href="{{ url_for('plataforma') }}"><strong>Plataforma</strong></a></li>
+                    <li><a href="{{ url_for('producto') }}"><strong>Producto</strong></a></li>
+                    <li><a href="{{ url_for('videojuego') }}"><strong>Videojuego</strong></a></li>
+                </ul>
+            </div>
+            <a href="{{ url_for('logout') }}" class="boton cerrar-sesion">
+                <ion-icon name="exit"></ion-icon>
+                <span>Cerrar Sesión</span>
+            </a>
+        </div>
+    </nav>
+</div>

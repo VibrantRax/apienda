@@ -1,0 +1,234 @@
+/* =====================================
+    GENERAL
+===================================== */
+body {
+    background-color: #0f0f0f;
+}
+
+.container {
+    margin-top: 20px;
+    align-items: center;
+}
+
+hr {
+    color: #50ad53;
+}
+
+/* =====================================
+    ENCABEZADO Y TÍTULO
+===================================== */
+.titulo {
+    background-color: #111111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #50ad53;
+}
+
+/* =====================================
+    NAVEGACIÓN
+===================================== */
+nav {
+    position: relative;
+    height: 55px;
+    background-color: #222222;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    color: #50ad53;
+}
+
+/* =====================================
+    BOTÓN CERRAR SESIÓN (NAVBAR)
+===================================== */
+.cerrar-sesion {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid #71f097;
+    background: transparent;
+}
+
+.cerrar-sesion::before {
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#25252b, #71f097, #25252b, #71f097);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.cerrar-sesion:hover::before {
+    top: 0;
+}
+
+/* =====================================
+    SECCIÓN DE BIENVENIDA
+===================================== */
+.bienvenida {
+    margin: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+/* =====================================
+    CARRUSEL
+===================================== */
+.carousel {
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 50%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* =====================================
+    TARJETAS DE JUEGOS
+===================================== */
+.juegos-container {
+    align-items: center;
+}
+
+.card {
+    color: white;
+    background-color: #2a2727;
+    height: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 286px;
+    height: 390px;
+}
+
+.precio {
+    color: #50ad53;
+}
+
+/* =====================================
+    BOTONES PERSONALIZADOS
+===================================== */
+.boton_card {
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #71f097;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boton_card:hover {
+    background-color: #357448;
+}
+
+.boton_card:active {
+    transform: scale(0.9);
+}
+
+/* =====================================
+    PIE DE PÁGINA
+===================================== */
+footer {
+    font-size: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    background-color: #d9d9d9;
+}
+
+.detalle {
+    color: white;
+}
+
+/* =====================================
+    FRASE DESTACADA / CITA
+===================================== */
+.contenido-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cita-contenedor {
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cita {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #e4e4e4;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cita::before {
+    content: '“';
+    font-size: 3rem;
+    color: #999;
+    position: absolute;
+    left: -40px;
+    top: -10px;
+}
+
+.cita::after {
+    content: '”';
+    font-size: 3rem;
+    color: #999;
+    position: absolute;
+    right: -40px;
+    bottom: -10px;
+}
+
+.autor-cita {
+    background-color: #0f0f0f;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: normal;
+}

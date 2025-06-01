@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'base.html' %}
+</head>
+<body>
+    {% include 'titulo.html' %}
+    <main>
+
+        {% include 'carrusel.html' %}
+
+        <div class="container">
+            <div class="row justify-content-center" id="juegos-container"></div>
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/inicio.js') }}"></script>
+</body>
+</html>
